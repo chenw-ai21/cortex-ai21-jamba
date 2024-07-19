@@ -14,7 +14,20 @@ Read more about [Jamba](https://arxiv.org/pdf/2403.19887) and its [long context 
    $ pip install -r requirements.txt
    ```
 
-2. Run the app
+2. Add your Snowflake credential in .streamlit/secretes.toml
+
+   ```
+   [connections.snowflake]
+   user='user'
+   password='password'
+   account='account'
+   role='role'
+   database='database'
+   schema='schema'
+   warehouse='warehouse'
+   ```
+
+3. Run the app
 
    ```
    $ streamlit run streamlit_app.py
