@@ -123,7 +123,7 @@ question = st.text_input("Enter question", placeholder="Did the company have a c
 
 if st.button('Answer'):
     answer = qna(question, form, company, date)
-    st.text_area("Answer:", answer, height=100)
+    st.text_area("Answer:", answer, height=300)
 
 st.header('3. Information retrieval from SEC filings', divider='rainbow')
 entity = st.text_input("Entity:", placeholder="revenue")
