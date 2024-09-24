@@ -19,7 +19,7 @@ def doc_select(form, company, date):
 
 def complete(prompt):    
     cmd = f"""
-             SELECT SNOWFLAKE.CORTEX.COMPLETE('jamba-instruct', ?) as response
+             SELECT SNOWFLAKE.CORTEX.COMPLETE('jamba-1.5-large', ?) as response
            """
     
     response = session.sql(cmd, params=[prompt]).collect()
